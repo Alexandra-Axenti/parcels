@@ -1,13 +1,37 @@
 <h3>Please input your parcel's weight and volume:</h3>
   <form action='/display'>
     <div class="form-group">
-      <label for="weight">Weight:</label>
+      <label for="height">Height (cm):</label>
+      <input id="height" name="height" class="form-control">cm
+    </div>
+
+    <div class="form-group">
+      <label for="width">Width (cm):</label>
+      <input id="width" name="width" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="length">Length (cm):</label>
+      <input id="length" name="length" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="weight">Weight (kg):</label>
       <input id="weight" name="weight" class="form-control">
     </div>
 
     <div class="form-group">
-      <label for="volume">Volume:</label>
-      <input id="volume" name="volume" class="form-control">
+      <label for="distance">Distance (km):</label>
+      <input id="distance" name="distance" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="speed">Delivery speed:</label>
+      <select name="speed" id="speed">
+        <option value="Normal">Normal</option>
+        <option value="Express">Express</option>
+        <option value="Same Day">Same Day</option>
+      </select>
     </div>
     <button type="submit" class="btn">Go!</button>
   </form>
